@@ -1,0 +1,74 @@
+.Navbarcontainer{
+margin: 0px;
+padding: 0px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+
+}
+
+.Navitems{  
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banImage{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 35%;
+    right:45%;
+}
+.banimg{
+    
+}
+.Outerdiv{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    position: absolute;
+}
+.innerdiv1{
+    background-color: red;
+    flex: 1;
+    
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.innerdiv2{
+    background-color: blue;
+    flex: 10;
+    position: relative;
+    overflow: scroll;
+}
+.innerdiv3{
+    background-color: yellow;
+    flex: 1;    
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.Middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./Images/gif5.gif') no-repeat fixed center;
+    background-size:contain;
+}
+
+.innerMiddle{
+padding-top: 30%;
+padding-bottom: 30%;
+}

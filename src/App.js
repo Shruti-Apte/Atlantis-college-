@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/style.css';
+import BubbleEffect from './Components/BubbleEffect';
+import Navbarcomp from './Components/Navbarcomp';
+import Banner from './Components/Banner';
+import MiddleSection from './Components/MiddleSection';
+import Sample from './Components/Sample';
 
-function App() {
+const App= () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+ <div className='App'>
+<BubbleEffect/>
+<Navbarcomp/> 
+<Banner/>
+<MiddleSection/>
+
+</div>
   );
 }
 

@@ -1,11 +1,113 @@
-.App {
+*{
+  color: white;
   text-align: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.App{
+  height: fit-content;
+  width: 100%;
+  /* background: linear-gradient(180deg,#014c75 5%,	#01324e 40%,	#00080d);  */
+  background:  linear-gradient(180deg,#245586 5%,	#012a41 50%,	#00030B) !important;
+  /* position: absolute; */
 }
+
+.bubble{
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: animate 4s linear infinite;
+ 
+}
+
+.dot{
+  height: 8px;
+  width: 8px;
+  border-radius: 50px;
+  background: white;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.bubble:nth-child(1){
+ 
+  top: 20%;
+  left: 20%;
+  animation: animate  8s linear infinite;
+}
+
+.bubble:nth-child(2){
+  
+  top: 60%;
+  left: 30%;
+  animation: animate 10s linear infinite;
+}
+
+.bubble:nth-child(3){
+ 
+  top: 40%;
+  left: 40%;
+  animation: animate 5s linear infinite;
+}
+
+.bubble:nth-child(4){
+  top: 66%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.bubble:nth-child(5){
+ 
+  top: 90%;
+  left: 60%;
+  animation: animate  9s linear infinite;
+}
+
+.bubble:nth-child(6){
+  
+  top: 30%;
+  left: 70%;
+  animation: animate 5s linear infinite;
+}
+
+.bubble:nth-child(7){
+ 
+  top: 70%;
+  left: 80%;
+  animation: animate 8s linear infinite;
+}
+
+.bubble:nth-child(8){
+  top: 75%;
+  left: 90%;
+  animation: animate 10s linear infinite;
+}
+
+.bubble:nth-child(9){
+  top: 50%;
+  left: 15%;
+  animation: animate  6s linear infinite;
+}
+
+.bubble:nth-child(10){
+  
+  top: 45%;
+  left: 5%;
+  animation: animate 10s linear infinite;
+}
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +115,13 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
+@keyframes animate{
   from {
-    transform: rotate(0deg);
+    transform:scale(0) translateY(0) rotate(70deg);
   }
   to {
-    transform: rotate(360deg);
+    transform:scale(1) translateY(-200px) rotate(360deg);
   }
 }
